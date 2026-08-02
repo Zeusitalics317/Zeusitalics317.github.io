@@ -926,7 +926,6 @@ h1 { max-width: 700px; font-size: clamp(50px,4.65vw,72px); line-height: .99; let
   font-weight: 900;
   letter-spacing: .12em;
 }
-.partner-blackbird .partner-monogram,
 .partner-ynea .partner-monogram { color: #70777d; background: transparent; }
 .partner-pingan img { max-width: 184px; filter: brightness(0); opacity: .72; }
 .partner-note { max-width: 920px; margin: 24px auto 0; color: #71828c; font-size: 11px; line-height: 1.7; text-align: center; }
