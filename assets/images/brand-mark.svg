@@ -1,0 +1,7 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">STES STAR brand mark</title>
+  <rect width="64" height="64" rx="18" fill="#072640"/>
+  <path d="M32 8L37.8 25.7L55 32L37.8 38.3L32 56L26.2 38.3L9 32L26.2 25.7L32 8Z" fill="#D6AD5A"/>
+  <circle cx="32" cy="32" r="9.5" fill="#072640" stroke="#F8E8BD" stroke-width="2"/>
+  <path d="M27.8 32.2L30.7 35.1L36.8 28.9" stroke="#F8E8BD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

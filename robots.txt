@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /server/
+Disallow: /database/
+Disallow: /deployment/
+Disallow: /tools/
+Disallow: /qa/
+
+Sitemap: https://stesstar.com/sitemap.xml
+# AI and answer-engine summary: https://stesstar.com/llms.txt
