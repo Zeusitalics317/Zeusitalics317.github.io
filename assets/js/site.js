@@ -258,6 +258,12 @@
   const enquiryModal = document.querySelector(".enquiry-modal");
   const form = enquiryModal?.querySelector("form");
   document.querySelectorAll(".js-enquiry").forEach(button => button.addEventListener("click", () => enquiryModal?.classList.add("open")));
+  document.querySelectorAll(".city-choice[data-city]").forEach(button => button.addEventListener("click", () => {
+    const cityInput = form?.querySelector('[name="city"]');
+    if (!cityInput) return;
+    cityInput.value = button.dataset.city || "";
+    window.setTimeout(() => cityInput.focus(), 80);
+  }));
   enquiryModal?.querySelector(".modal-close")?.addEventListener("click", () => enquiryModal.classList.remove("open"));
   enquiryModal?.addEventListener("click", event => { if (event.target === enquiryModal) enquiryModal.classList.remove("open"); });
   form?.addEventListener("submit", async event => {
