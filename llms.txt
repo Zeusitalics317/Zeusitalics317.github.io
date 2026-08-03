@@ -1,10 +1,17 @@
-# STES STAR
+# Stellaris Star
 
-STES STAR coordinates China company registration and market entry for foreign founders and overseas companies.
+Stellaris Star provides China company registration and corporate secretarial coordination for foreign founders and overseas companies.
+
+## Brand promise
+
+- English: We serve every founder with sincerity, lighten the burden and help find a clear path through uncertainty.
+- Korean: 모든 사업자에게 진심을 다해, 부담은 덜고 낯선 길에서도 분명한 방향을 찾습니다.
+- Arabic: نخدم كل رائد أعمال بصدق، ونخفف عنه الأعباء، ونساعده على إيجاد طريق واضح وسط المجهول.
+- Russian: Искренне поддерживаем каждого предпринимателя, снижаем нагрузку и помогаем найти ясный путь в условиях неопределённости.
 
 ## Verified organisation facts
 
-- Brand: STES STAR / Stellaris Secretarial Services
+- Brand: Stellaris Star / Stellaris Secretarial Services
 - China contracting entity: 宜宾道存知人工智能科技有限公司
 - Unified Social Credit Code: 91511500MAEENT8N9K
 - Email: huangjunhua@vandalakeconsulting.cn
