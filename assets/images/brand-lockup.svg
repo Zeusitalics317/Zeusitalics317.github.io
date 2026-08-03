@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 118" role="img" aria-labelledby="title desc">
+  <title id="title">Stellaris Star</title>
+  <desc id="desc">China company registration and corporate secretarial services</desc>
+  <defs><linearGradient id="blue" x1="10" y1="8" x2="88" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#08245d"/><stop offset="1" stop-color="#1559df"/></linearGradient></defs>
+  <g transform="translate(5 5)">
+    <path d="M54 2 62 45 103 54 62 63 54 106 46 63 5 54 46 45 54 2Z" fill="url(#blue)"/>
+    <path d="M54 2v52H5l41-9L54 2Z" fill="#071b4b"/>
+    <path d="M54 54h49l-41 9-8 43V54Z" fill="#0f45b9"/>
+    <path d="M54 18 59 49 87 54 59 59 54 90 49 59 21 54 49 49 54 18Z" fill="#f7fbff"/>
+    <path d="M54 29 57 51 76 54 57 57 54 79 51 57 32 54 51 51 54 29Z" fill="#6f94cd"/>
+    <path d="M78 21c10 2 16 10 16 21" fill="none" stroke="#6f94cd" stroke-width="2" stroke-linecap="round"/>
+    <path d="m86 12 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" fill="#1559df"/>
+    <path d="M29 79c-8-3-13-10-13-19" fill="none" stroke="#9eabc4" stroke-width="2" stroke-linecap="round"/>
+    <path d="m16 76 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="#8998b5"/>
+  </g>
+  <text x="126" y="61" font-family="Segoe UI,Arial,sans-serif" font-size="47" font-weight="650" letter-spacing="-1.5" fill="#071b4b">Stellaris</text>
+  <text x="316" y="61" font-family="Segoe UI,Arial,sans-serif" font-size="47" font-weight="650" letter-spacing="-1.5" fill="#1559df">Star</text>
+  <line x1="128" y1="73" x2="544" y2="73" stroke="#d4ddec"/>
+  <text x="128" y="91" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.15" fill="#4e607e">CHINA COMPANY REGISTRATION</text>
+  <text x="128" y="108" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.15" fill="#4e607e">CORPORATE SECRETARIAL SERVICES</text>
+</svg>

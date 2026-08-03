@@ -1069,3 +1069,29 @@ h1 { max-width: 700px; font-size: clamp(50px,4.65vw,72px); line-height: .99; let
   .visual-story-copy,[dir="rtl"] .visual-story-copy { margin: -42px 12px 0; }
   .proof-grid div,.proof-grid > a,[dir="rtl"] .proof-grid div,[dir="rtl"] .proof-grid > a { border-left: 0; border-right: 0; }
 }
+
+/* Stellaris Star primary brand lockup.
+   The descriptor is part of the SVG so every language sees the same legal-service position. */
+.header-row { min-height: 84px; }
+.brand img.brand-lockup {
+  display: block;
+  width: 286px;
+  height: auto;
+  max-width: none;
+}
+
+@media (max-width: 1180px) {
+  .header-row { gap: 18px; }
+  .brand img.brand-lockup { width: 244px; }
+}
+
+@media (max-width: 640px) {
+  .header-row { min-height: 76px; gap: 12px; }
+  .brand img.brand-lockup { width: 184px; }
+  .header-actions { gap: 6px; }
+  .locale-trigger { padding: 8px 9px; }
+}
+
+@media (max-width: 370px) {
+  .brand img.brand-lockup { width: 164px; }
+}
