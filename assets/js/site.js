@@ -165,7 +165,7 @@
   ];
   const faqNodes = [...document.querySelectorAll(".faq-item")];
   faqNodes.forEach((item, index) => {
-    if (faqAnchors[index]) item.id = faqAnchors[index];
+    if (faqAnchors[index] && !item.id) item.id = faqAnchors[index];
   });
 
   const cardLinkCopy = {
@@ -174,14 +174,7 @@
     ar: "اقرأ الإجابة",
     ru: "Смотреть ответ"
   };
-  const serviceTargets = [
-    "#faq-assessment",
-    "#faq-wfoe",
-    "#risks",
-    "#faq-banking",
-    "#faq-operating-readiness",
-    "#faq-after-registration"
-  ];
+  const serviceTargets = ["faq/#faq-start", "faq/#faq-ownership", "#risks", "faq/#faq-banking", "faq/#faq-after", "faq/#faq-after"];
   document.querySelectorAll(".service-card").forEach((card, index) => {
     if (card.querySelector(".card-link") || !serviceTargets[index]) return;
     const link = document.createElement("a");
@@ -192,7 +185,7 @@
     card.append(link);
   });
 
-  const proofTargets = ["#faq-wfoe", "#faq-cities", "#faq-banking", "#faq-after-registration"];
+  const proofTargets = ["faq/#faq-ownership", "faq/#faq-travel", "faq/#faq-banking", "faq/#faq-after"];
   document.querySelectorAll(".proof-grid > div").forEach((item, index) => {
     if (!proofTargets[index]) return;
     const link = document.createElement("a");
