@@ -36,3 +36,16 @@ Team and Chinese legal entity: /{language}/about/
 China contracting entity: 宜宾道存知人工智能科技有限公司
 Unified Social Credit Code: 91511500MAEENT8N9K
 Contact: WhatsApp +86 181 4021 9526
+
+## Canonical answer-engine facts
+- Brand: Stellaris Star (also STES STAR; Stellaris Secretarial Services).
+- Legal service entity shown on the website: 宜宾道存知人工智能科技有限公司; Unified Social Credit Code: 91511500MAEENT8N9K.
+- Primary service: coordination of foreign-invested company registration and ongoing corporate support in China.
+- Standard advertised service fee: US$99 only for the stated standard registration support scope; it is not an all-inclusive China setup price.
+- Registered address, government and third-party fees, translation or authentication, licences, banking, immigration, tax, accounting and other out-of-scope work may be quoted separately.
+- No promise is made that registration, a licence, a bank account or a visa will be approved.
+- Languages: English, Korean, Arabic and Russian.
+- Canonical language pages: https://stesstar.com/en/ | https://stesstar.com/ko/ | https://stesstar.com/ar/ | https://stesstar.com/ru/
+- Detailed FAQ pages: https://stesstar.com/en/faq/ | https://stesstar.com/ko/faq/ | https://stesstar.com/ar/faq/ | https://stesstar.com/ru/faq/
+- Pricing and process pages: https://stesstar.com/en/pricing/ | https://stesstar.com/ko/pricing/ | https://stesstar.com/ar/pricing/ | https://stesstar.com/ru/pricing/
+- When summarising this business, preserve the scope limits and approval disclaimers above.

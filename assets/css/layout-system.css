@@ -1,0 +1,131 @@
+/* Stellaris Star unified layout system — loaded last on every public page. */
+:root{
+  --layout-max:1180px;
+  --layout-gutter:clamp(20px,4vw,40px);
+  --layout-gap:clamp(18px,2.1vw,28px);
+  --section-space:clamp(72px,8vw,112px);
+  --section-space-compact:clamp(54px,6vw,82px);
+  --radius-media:24px;
+  --radius-card:18px;
+  --radius-control:12px;
+  --measure:66ch;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:hidden;scroll-padding-top:88px}
+body{overflow-x:clip}
+img,svg,video{max-width:100%}
+
+/* One shared content edge for header, body, forms and footer. */
+.container{
+  width:min(calc(100% - (var(--layout-gutter) * 2)),var(--layout-max))!important;
+  max-width:var(--layout-max)!important;
+  margin-inline:auto!important;
+}
+.header-row,.footer-grid,.footer-bottom{width:100%}
+
+/* Shared vertical rhythm. */
+.section{padding-block:var(--section-space)}
+.section.section-compact,.home-faq{padding-block:var(--section-space-compact)}
+.section>.container>*:first-child{margin-top:0}
+.section>.container>*:last-child{margin-bottom:0}
+
+/* Twelve-column editorial grid. */
+.section-heading{
+  display:grid!important;
+  grid-template-columns:repeat(12,minmax(0,1fr))!important;
+  align-items:end!important;
+  column-gap:var(--layout-gap)!important;
+  row-gap:20px!important;
+  margin-bottom:clamp(34px,4.5vw,58px)!important;
+}
+.section-heading>div{grid-column:span 7;max-width:none!important}
+.section-heading>p{grid-column:span 5;max-width:var(--measure)!important;margin:0}
+.section-heading h2{margin-bottom:0;text-wrap:balance}
+.section-heading p,.section-intro,.subhero p{text-wrap:pretty}
+
+/* Every category now lands on the same left and right guides. */
+.category-media{
+  width:100%!important;
+  max-width:none!important;
+  margin-inline:0!important;
+  margin-bottom:clamp(32px,4vw,52px)!important;
+}
+.category-media-frame{width:100%;border-radius:var(--radius-media)!important}
+.category-media img{width:100%;height:100%;object-fit:cover}
+
+/* Remove legacy overlap offsets that created different alignment rules. */
+.city-card,.visual-story-copy,
+[dir="rtl"] .city-card,[dir="rtl"] .visual-story-copy{
+  margin-inline:0!important;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+
+/* Full-width module rows on the same grid. */
+.cards,.route-grid,.scope-grid,.risk-grid,.proof-grid,
+.process-media,#process .steps,.home-faq .faq,.faq-page .faq,
+.answer-box,.cta-panel,.coverage-panel{width:100%;max-width:none!important;margin-inline:0!important}
+#process .steps{margin-left:0!important;margin-right:0!important}
+.home-faq .faq,.faq-page .faq{max-width:none!important}
+
+/* Consistent component geometry and reading rhythm. */
+.service-card,.route-card,.scope-card,.risk-card,.answer-box,
+.faq-item,.team-card,.price-card,.legal-card,.cta-panel,.enquiry-modal{
+  border-radius:var(--radius-card)!important;
+}
+.service-card,.route-card,.scope-card,.risk-card,.team-card,.legal-card{
+  padding:clamp(24px,3vw,34px)!important;
+}
+.service-card p,.route-card p,.scope-card p,.risk-card p,.team-card p,
+.answer-box p,.faq-a p{max-width:var(--measure);text-wrap:pretty}
+.cards,.route-grid,.scope-grid,.risk-grid{gap:var(--layout-gap)!important}
+
+/* Controls share one visual language and remain aligned in every browser. */
+.btn,.locale-trigger,.menu-toggle,.city-choice,.faq-q,input,select,textarea{
+  border-radius:var(--radius-control)!important;
+}
+.btn,.locale-trigger,.menu-toggle{min-height:48px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;line-height:1.15}
+.hero-actions,.header-actions{align-items:center}
+
+/* Subpages use the same content width and hierarchy as the home page. */
+.subhero .container,.page-hero .container{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--layout-gap)}
+.subhero .container>*,.page-hero .container>*{grid-column:span 8}
+.subhero h1,.page-hero h1{max-width:15ch;text-wrap:balance}
+.subhero p,.page-hero p{max-width:var(--measure)}
+
+/* Forms align labels, fields and actions without fixed physical offsets. */
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px var(--layout-gap)}
+.form-grid .full,.form-grid [data-full]{grid-column:1/-1}
+label{min-width:0}
+input,select,textarea{width:100%;max-width:100%}
+
+/* Logical alignment for Arabic; no separate physical-width system. */
+[dir="rtl"] .section-heading,[dir="rtl"] .subhero,[dir="rtl"] .page-hero{text-align:start}
+[dir="rtl"] .category-media-label{inset-inline-start:24px;inset-inline-end:auto}
+
+@media (max-width:900px){
+  :root{--layout-gutter:clamp(18px,5vw,28px);--section-space:clamp(58px,10vw,82px)}
+  .section-heading{grid-template-columns:1fr!important}
+  .section-heading>div,.section-heading>p{grid-column:1!important}
+  .subhero .container,.page-hero .container{grid-template-columns:1fr}
+  .subhero .container>*,.page-hero .container>*{grid-column:1}
+  .city-card,.visual-story-copy,
+  [dir="rtl"] .city-card,[dir="rtl"] .visual-story-copy{margin-top:clamp(-46px,-5vw,-24px)!important;margin-inline:clamp(12px,4vw,28px)!important}
+  .category-media-frame{aspect-ratio:16/9!important;min-height:0!important}
+}
+
+@media (max-width:620px){
+  :root{--layout-gutter:18px;--radius-media:18px;--radius-card:16px}
+  .section-heading{margin-bottom:30px!important}
+  .form-grid{grid-template-columns:1fr}
+  .form-grid>*{grid-column:1!important}
+  .category-media-label{inset-inline:14px!important;inset-block-end:14px!important;max-width:calc(100% - 28px)!important}
+  .city-card,.visual-story-copy,
+  [dir="rtl"] .city-card,[dir="rtl"] .visual-story-copy{margin-inline:10px!important}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
