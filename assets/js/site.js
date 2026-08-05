@@ -211,7 +211,7 @@
   document.querySelectorAll(".locale-trigger").forEach(button => button.addEventListener("click", () => preferenceModal?.classList.add("open")));
   preferenceModal?.querySelector(".modal-close")?.addEventListener("click", () => preferenceModal.classList.remove("open"));
   preferenceModal?.addEventListener("click", event => { if (event.target === preferenceModal) preferenceModal.classList.remove("open"); });
-  if (preferenceModal && !readPreferences() && !document.body.classList.contains("gate-page")) preferenceModal.classList.add("open");
+  if (preferenceModal) preferenceModal.classList.toggle("open", !readPreferences() && !document.body.classList.contains("gate-page"));
 
   const menu = document.querySelector(".desktop-nav");
   document.querySelector(".menu-toggle")?.addEventListener("click", event => {
