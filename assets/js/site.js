@@ -288,7 +288,8 @@
 
   /* Editorial reveal and restrained image depth. Progressive enhancement only. */
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!reducedMotion && "IntersectionObserver" in window) {
+  const enhancedMotion = !reducedMotion && window.matchMedia("(min-width: 901px) and (hover: hover) and (pointer: fine)").matches;
+  if (enhancedMotion && "IntersectionObserver" in window) {
     document.documentElement.classList.add("motion-ready");
     const revealNodes = document.querySelectorAll([
       ".section-heading",
