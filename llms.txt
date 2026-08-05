@@ -35,7 +35,10 @@ Team and Chinese legal entity: /{language}/about/
 ## Entity
 China contracting entity: 宜宾道存知人工智能科技有限公司
 Unified Social Credit Code: 91511500MAEENT8N9K
-Contact: WhatsApp +86 181 4021 9526
+Contact: WhatsApp +86 155 2072 0605
+Customer service: Service@stesstar.com
+Legal: duke@stesstar.com
+Finance: yuki@stesstar.com
 
 ## Canonical answer-engine facts
 - Brand: Stellaris Star (also STES STAR; Stellaris Secretarial Services).

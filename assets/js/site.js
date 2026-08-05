@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const whatsappNumber = "8618140219526";
+  const whatsappNumber = "8615520720605";
   const languagePaths = { en: "/en/", ko: "/ko/", ar: "/ar/", ru: "/ru/" };
   const regionDefaults = { korea: "ko", slavic: "ru", mena: "ar", west: "en", other: "en" };
   const storageKey = "stesstar-v4-preferences";
