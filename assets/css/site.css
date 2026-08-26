@@ -1166,3 +1166,63 @@ html{scroll-padding-top:104px}
 
 /* Resource mobile wrapping 2026-08-26 */
 .resource-hero h1,.section-heading h2{overflow-wrap:anywhere;word-break:normal}.section-heading>*{min-width:0}@media(max-width:640px){.section-heading{grid-template-columns:minmax(0,1fr)}.section-heading h2{max-width:100%}}
+
+
+/* Two-service homepage and resilient header 2026-08-26 */
+.site-header .header-row{min-height:84px;gap:clamp(12px,1.4vw,20px)}
+.brand{flex:0 0 auto}
+.brand img.brand-lockup{width:244px}
+.desktop-nav{flex:0 1 auto;align-items:center;gap:clamp(12px,1.25vw,20px)}
+.desktop-nav a{padding-block:32px;white-space:nowrap;text-wrap:nowrap;line-height:1}
+.header-actions{flex:0 0 auto;white-space:nowrap}
+.header-actions .btn{padding-inline:18px;white-space:nowrap;text-wrap:nowrap}
+.home-businesses{background:linear-gradient(145deg,#f3f6fc 0%,#fff 48%,#eef8f7 100%)}
+.home-businesses .section-heading{margin-bottom:44px}
+.business-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,2.5vw,32px);align-items:stretch}
+.business-card{position:relative;display:flex;min-width:0;flex-direction:column;overflow:hidden;padding:clamp(26px,3.2vw,44px);border:1px solid #d5dfed;border-radius:28px;background:#fff;box-shadow:0 24px 60px rgba(18,43,78,.09)}
+.business-card-negotiation{border-color:#25476d;background:radial-gradient(circle at 100% 0,rgba(83,139,202,.35),transparent 35%),linear-gradient(145deg,#111f43,#123554 68%,#07505a);color:#fff}
+.business-card-top{display:flex;align-items:center;gap:12px;margin-bottom:24px}
+.business-no{display:grid;width:38px;height:38px;place-items:center;border-radius:12px;background:#e8effb;color:#294f8f;font-size:.76rem;font-weight:900}
+.business-card-negotiation .business-no{background:rgba(125,226,211,.14);color:#80e6dc}
+.business-kicker{font-size:.76rem;font-weight:900;letter-spacing:.12em}
+.business-price{display:flex;flex-wrap:wrap;align-items:flex-end;gap:9px 14px;margin-bottom:28px}
+.business-price strong{color:#294f8f;font-size:clamp(3rem,5.5vw,5.2rem);line-height:.92;letter-spacing:-.055em}
+.business-card-negotiation .business-price strong{color:#88abda}
+.business-price span{max-width:210px;color:#5c6d83;font-size:.86rem;line-height:1.45}
+.business-card-negotiation .business-price span{color:#d4e2ef}
+.business-price b{flex-basis:100%;color:#0a897f;font-size:clamp(1.25rem,2vw,1.75rem)}
+.business-card-negotiation .business-price b{color:#7ce4d9}
+.business-card h2{margin:0 0 14px;font-size:clamp(1.8rem,3vw,3rem);line-height:1.08;overflow-wrap:anywhere}
+.business-card>p{color:#52647a;line-height:1.72}
+.business-card-negotiation>p{color:#d3dfeb}
+.business-card ul{display:grid;gap:8px;margin:20px 0 24px;padding:0;list-style:none}
+.business-card li{padding:11px 13px;border:1px solid #dde5ef;border-radius:12px;background:#f7f9fd;font-weight:750}
+.business-card li:before{content:'✓';margin-inline-end:9px;color:#0b978e}
+.business-card-negotiation li{border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.07)}
+.business-note{margin-top:auto!important;padding-top:20px;border-top:1px solid #dbe3ed;font-size:.82rem}
+.business-card-negotiation .business-note{border-color:rgba(255,255,255,.16)}
+.business-link{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px;padding:15px 17px;border-radius:14px;background:#17264a;color:#fff;font-weight:850;text-decoration:none}
+.business-card-negotiation .business-link{background:#88abda;color:#102142}
+.business-link span{display:grid;width:30px;height:30px;place-items:center;border-radius:10px;background:rgba(255,255,255,.16)}
+.business-card-negotiation .business-link span{background:rgba(16,33,66,.12)}
+.home-choice{background:#fff}
+@media(max-width:1120px){
+  .desktop-nav,.header-actions .btn{display:none}
+  .menu-toggle{display:block}
+  .desktop-nav.open{position:absolute;inset-block-start:100%;inset-inline:0;display:grid;gap:0;padding:15px 20px 25px;background:#fff;box-shadow:var(--shadow)}
+  .desktop-nav.open a{padding:14px 13px;border-bottom:1px solid var(--line);white-space:normal}
+}
+@media(min-width:1121px){.desktop-nav{display:flex}.menu-toggle{display:none}}
+@media(max-width:1180px) and (min-width:1121px){.brand img.brand-lockup{width:224px}.desktop-nav{gap:11px}.desktop-nav a{font-size:12px}.header-actions .btn{padding-inline:14px}}
+@media(max-width:800px){.business-grid{grid-template-columns:1fr}.home-businesses .section-heading{margin-bottom:30px}}
+@media(max-width:640px){.brand img.brand-lockup{width:172px}.business-card{padding:24px 20px;border-radius:22px}.business-price strong{font-size:clamp(2.8rem,14vw,4.25rem)}.home-choice .cta-actions{display:grid;grid-template-columns:1fr}.home-choice .btn{width:100%;white-space:normal}}
+
+
+/* Russian navigation needs an earlier compact breakpoint. */
+@media(max-width:1500px){
+  html[lang="ru"] .desktop-nav,html[lang="ru"] .header-actions .btn{display:none}
+  html[lang="ru"] .menu-toggle{display:block}
+  html[lang="ru"] .desktop-nav.open{position:absolute;inset-block-start:100%;inset-inline:0;display:grid;gap:0;padding:15px 20px 25px;background:#fff;box-shadow:var(--shadow)}
+  html[lang="ru"] .desktop-nav.open a{padding:14px 13px;border-bottom:1px solid var(--line);white-space:normal}
+}
+@media(min-width:1501px){html[lang="ru"] .desktop-nav{display:flex}html[lang="ru"] .menu-toggle{display:none}}
