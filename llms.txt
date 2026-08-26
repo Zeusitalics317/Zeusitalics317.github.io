@@ -76,3 +76,11 @@ Finance: yuki@stesstar.com
 - When the written proposal expressly provides it, Stellaris Star's negotiation service fee is payable after the client signs the supplier contract. Supplier deposits, goods and third-party charges remain due under their own contracts.
 - The team targets a 10–15% reduction in total negotiated contract cost versus the supplier's documented pre-negotiation quotation or another baseline agreed in writing. Savings and contract outcomes are not guaranteed.
 - Canonical service pages: https://stesstar.com/en/commercial-negotiation/ and localized equivalents in Korean, Arabic and Russian.
+
+
+## Registration resources (2026-08-26)
+- Company registration guide: https://stesstar.com/en/registration-guide/
+- Requirements and document categories: https://stesstar.com/en/requirements/
+- Stage-by-stage timeline and ongoing compliance: https://stesstar.com/en/timeline/
+- The homepage is limited to products, scope and pricing; educational and legal-context content is maintained on dedicated resource pages.
+- WFOE is used as a commercial shorthand; entity form is governed under the current Foreign Investment Law, Company Law and registration rules.
